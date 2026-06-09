@@ -1,0 +1,48 @@
+{
+	"kind": "collectionType",
+	"collectionName": "products",
+	"info": {
+		"singularName": "product",
+		"pluralName": "products",
+		"displayName": "Product"
+	},
+	"options": {
+		"draftAndPublish": true
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"required": true
+		},
+		"category": {
+			"type": "enumeration",
+			"enum": [
+				"Luxury Vinyl Plank",
+				"Laminate",
+				"Ceramic Tile",
+				"Porcelain Tile",
+				"Underlayment",
+				"Epoxy Floor Coatings",
+				"Resin Pigments",
+				"Floor Coatings",
+				"Polyaspartic & Urethane"
+			],
+			"required": true
+		},
+		"size": {
+			"type": "string"
+		},
+		"price_sqf": {
+			"type": "decimal"
+		},
+		"price_unit": {
+			"type": "decimal"
+		},
+		"image": {
+			"type": "media",
+			"multiple": false,
+			"required": false,
+			"allowedTypes": ["images"]
+		}
+	}
+}
