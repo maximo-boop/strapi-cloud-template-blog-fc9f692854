@@ -38,6 +38,9 @@
 		"price_unit": {
 			"type": "decimal"
 		},
+		"price_box": {
+			"type": "decimal"
+		},
 		"image": {
 			"type": "media",
 			"multiple": false,
