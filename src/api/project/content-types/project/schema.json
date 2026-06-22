@@ -2,8 +2,8 @@
   "kind": "collectionType",
   "collectionName": "project_galleries",
   "info": {
-    "singularName": "project-gallery",
-    "pluralName": "project-galleries",
+    "singularName": "project",
+    "pluralName": "projects",
     "displayName": "Project Gallery"
   },
   "options": { "draftAndPublish": true },
