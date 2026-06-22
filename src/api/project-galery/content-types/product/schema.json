@@ -1,0 +1,15 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_galleries",
+  "info": {
+    "singularName": "project-gallery",
+    "pluralName": "project-galleries",
+    "displayName": "Project Gallery"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "material": { "type": "string", "required": true },
+    "materialId": { "type": "string", "required": true },
+    "images": { "type": "media", "multiple": true, "allowedTypes": ["images"] }
+  }
+}
