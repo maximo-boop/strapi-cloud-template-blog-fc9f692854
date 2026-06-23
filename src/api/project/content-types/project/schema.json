@@ -8,7 +8,24 @@
   },
   "options": { "draftAndPublish": true },
   "attributes": {
-    "material": { "type": "string", "required": true },
+    "material": {
+      "type": "enumeration",
+      "enum": [
+        "LVT & Vinyl Plank",
+        "Carpet & Carpet Tile",
+        "Ceramic & Tile",
+        "Backsplash & Wall Tile",
+        "Shower & Wet Areas",
+        "Hardwood",
+        "Epoxy Flooring",
+        "Other"
+      ],
+      "required": true
+    },
+    "customMaterial": {
+      "type": "string",
+      "description": "Only used when Material = Other. Must follow existing naming conventions."
+    },
     "materialId": { "type": "string", "required": true },
     "images": { "type": "media", "multiple": true, "allowedTypes": ["images"] }
   }
