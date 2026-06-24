@@ -26,11 +26,13 @@
       "type": "string",
       "description": "Only used when Material = Other. Must follow existing naming conventions."
     },
-    "featured": {
-      "type": "boolean",
-      "default": false
-    },
-    "materialId": { "type": "string", "required": true },
-    "images": { "type": "media", "multiple": true, "allowedTypes": ["images"] }
+    "materialId": { "type": "string" },
+    "images": { "type": "media", "multiple": true, "allowedTypes": ["images"] },
+    "carouselImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"],
+      "description": "Imagen representativa de este material para el carousel principal"
+    }
   }
 }

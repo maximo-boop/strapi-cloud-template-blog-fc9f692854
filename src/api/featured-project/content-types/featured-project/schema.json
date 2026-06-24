@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featured_projects",
+  "info": {
+    "singularName": "featured-project",
+    "pluralName": "featured-projects",
+    "displayName": "Featured Project"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"],
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "description": "Posición en la grilla (1-5)"
+    }
+  }
+}
