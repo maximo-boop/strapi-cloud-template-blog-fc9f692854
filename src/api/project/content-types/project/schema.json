@@ -26,7 +26,10 @@
       "type": "string",
       "description": "Only used when Material = Other. Must follow existing naming conventions."
     },
-    "materialId": { "type": "string" },
+    "carouselOrder": {
+      "type": "integer",
+      "description": "Order in which this material appears in the homepage carousel. Lower numbers appear first."
+    },
     "images": { "type": "media", "multiple": true, "allowedTypes": ["images"] },
     "carouselImage": {
       "type": "media",
