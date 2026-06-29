@@ -18,6 +18,15 @@
       "type": "integer",
       "required": true,
       "description": "Posición en la grilla (1-5)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Título corto del proyecto (opcional, aparece al pasar el mouse)"
+    },
+    "shortDescription": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Descripción breve (opcional, aparece al pasar el mouse)"
     }
   }
 }

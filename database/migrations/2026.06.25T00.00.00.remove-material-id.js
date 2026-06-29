@@ -1,20 +1,14 @@
-// database/migrations/2026.06.25T00.00.00.remove-material-id.js
+// database/migrations/2026.06.25T01.00.00.clear-project-sort-settings.js
 
 'use strict';
 
 module.exports = {
   async up(knex) {
-    const exists = await knex.schema.hasColumn('project_galleries', 'material_id');
-    if (exists) {
-      await knex.schema.table('project_galleries', table => {
-        table.dropColumn('material_id');
-      });
-    }
+    await knex('strapi_core_store_settings')
+      .where('key', 'like', '%project%')
+      .andWhere('value', 'like', '%materialId%')
+      .delete();
   },
 
-  async down(knex) {
-    await knex.schema.table('project_galleries', table => {
-      table.string('material_id');
-    });
-  }
+  async down() {}
 };
