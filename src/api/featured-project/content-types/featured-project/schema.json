@@ -8,25 +8,25 @@
   },
   "options": { "draftAndPublish": true },
   "attributes": {
-    "image": {
+    "images": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "allowedTypes": ["images"],
-      "required": true
+      "required": true,
+      "description": "Todas las fotos del proyecto — la primera se usa como portada"
     },
     "order": {
       "type": "integer",
       "required": true,
-      "description": "Posición en la grilla (1-5)"
+      "description": "Posición (1-5)"
     },
     "title": {
       "type": "string",
-      "description": "Título corto del proyecto (opcional, aparece al pasar el mouse)"
+      "required": true
     },
-    "shortDescription": {
-      "type": "string",
-      "maxLength": 100,
-      "description": "Descripción breve (opcional, aparece al pasar el mouse)"
+    "description": {
+      "type": "text",
+      "description": "Descripción breve del proyecto"
     }
   }
 }
